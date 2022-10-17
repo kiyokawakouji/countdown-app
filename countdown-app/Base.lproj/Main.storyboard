@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="countdown_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="countdown_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,12 @@
                                     <constraint firstAttribute="height" constant="32" id="4fO-PP-LJZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="5nx-tr-pAJ" kind="presentation" id="Zo9-JM-cui"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAX-6p-2AQ">
                                 <rect key="frame" x="47" y="140" width="320" height="124"/>
@@ -40,7 +45,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstItem="UiP-oK-z4L" firstAttribute="top" secondItem="SAX-6p-2AQ" secondAttribute="top" constant="42" id="8ME-pd-3aO"/>
                                     <constraint firstItem="UiP-oK-z4L" firstAttribute="leading" secondItem="SAX-6p-2AQ" secondAttribute="leading" constant="49" id="ALV-tm-Omm"/>
@@ -73,13 +77,78 @@
             </objects>
             <point key="canvasLocation" x="8.6956521739130448" y="91.741071428571431"/>
         </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="b9c-b3-bU2">
+            <objects>
+                <viewController storyboardIdentifier="modal" modalPresentationStyle="overCurrentContext" id="5nx-tr-pAJ" customClass="ModalViewController" customModule="countdown_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ybq-i3-FB1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfX-6U-vq9">
+                                <rect key="frame" x="47" y="168" width="320" height="480"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngu-EN-Xs7">
+                                        <rect key="frame" x="113" y="320.5" width="94" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dD-UN-vah">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="No">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="dismissModal:" destination="5nx-tr-pAJ" eventType="touchUpInside" id="bbQ-ac-sQ8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udK-02-QKQ">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Yes">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カウントダウンしますか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="381-T4-E7J">
+                                        <rect key="frame" x="56" y="116" width="208" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.90196078430000004" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="3hZ-eS-LIU"/>
+                                    <constraint firstItem="ngu-EN-Xs7" firstAttribute="centerX" secondItem="AfX-6U-vq9" secondAttribute="centerX" id="634-CL-mSF"/>
+                                    <constraint firstAttribute="width" constant="320" id="82F-9A-bHe"/>
+                                    <constraint firstItem="ngu-EN-Xs7" firstAttribute="centerY" secondItem="AfX-6U-vq9" secondAttribute="centerY" constant="96" id="Pk5-gL-t5b"/>
+                                    <constraint firstItem="381-T4-E7J" firstAttribute="centerX" secondItem="AfX-6U-vq9" secondAttribute="centerX" id="SWE-CA-t1a"/>
+                                    <constraint firstItem="381-T4-E7J" firstAttribute="top" secondItem="AfX-6U-vq9" secondAttribute="top" constant="116" id="lQP-bG-Iwu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DRt-b7-V1K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AfX-6U-vq9" firstAttribute="centerY" secondItem="Ybq-i3-FB1" secondAttribute="centerY" constant="-40" id="gQI-wf-zhg"/>
+                            <constraint firstItem="AfX-6U-vq9" firstAttribute="centerX" secondItem="Ybq-i3-FB1" secondAttribute="centerX" id="gR8-bP-23q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tqH-bU-zQb"/>
+                    <connections>
+                        <outlet property="No" destination="6dD-UN-vah" id="DJl-U1-tOI"/>
+                        <outlet property="Yes" destination="udK-02-QKQ" id="AWA-Ho-iqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdb-37-q2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="92"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
