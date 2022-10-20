@@ -21,8 +21,11 @@ class ModalViewController: UIViewController {
         Yes.backgroundColor = UIColor(red: 0.24, green: 0.36, blue: 0.14, alpha: 1.0)
     }
 
-    // TODO: Yes/Noで別アクション作成する
-    // TODO: Yesの場合カウントダウンを実行する
+
+    // TODO: No → 閉じる
+    // TODO: ② Yes → カウントダウン実行 + 閉じる
+
+    // Noはモーダル遷移させてるけど、Yesでも遷移すること考えると別の遷移方法がいいかもしれない
     @IBAction func dismissModal(_ sender: Any) {
         self.dismiss(animated: true,completion: nil)
     }
