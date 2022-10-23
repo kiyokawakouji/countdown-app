@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あとn回" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ev-2O-OrP">
-                                <rect key="frame" x="164" y="356" width="86" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日はあと3回" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ev-2O-OrP">
+                                <rect key="frame" x="127" y="356" width="160.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="YjK-EQ-eTw" id="j0B-CY-dFa"/>
-                        <outlet property="countRemainingLabel" destination="5Ev-2O-OrP" id="hQf-UN-FQ6"/>
+                        <outlet property="remainings" destination="5Ev-2O-OrP" id="KZ3-Ia-6ka"/>
                         <outlet property="titleLabel" destination="UiP-oK-z4L" id="bie-gW-UyD"/>
                     </connections>
                 </viewController>
