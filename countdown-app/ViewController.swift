@@ -25,24 +25,29 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 16
         button.backgroundColor = UIColor(red: 0.24, green: 0.36, blue: 0.14, alpha: 1.0)
     }
-    // TODO: ⑥ もう一度遊べるドンを押すとViewControllerへ遷移するとカウントダウンがリセットさせれる
 
-    private func checkTestRemains() {
-        if self.remainingsCount < 1 {
-            // TODO: ⑤ 「今日はもうおしまいです」モーダルでもう一度遊べるドンを押すとViewControllerへ遷移する
+
+
+
+
+    
+
+    // MARK: - カウントダウンが1以上→遷移、0回→Finish画面に遷移する
+//    private func checkTestRemains() {
+//        if self.remainingsCount < 1 {
 //            self.showFinishTextPopUp()
-        } else {
-
-            }
+//        } else {
 //            self.present(vc, animated: true)
-        }
+//        }
+//    }
 
-    func reduceTestRemains() {
-        self.remainingsCount -= 1
-        self.remainings.text = "今日はあと\(self.remainingsCount)回"
-    }
+    // MARK: - カウントダウン（他画面から呼び出すためにprivateは外しておく）
+//    func reduceTestRemains() {
+//        self.remainingsCount -= 1
+//        self.remainings.text = "今日はあと\(self.remainingsCount)回"
+//    }
 
-    // TODO: ④ あと0回でButtonを押すと「今日はもうおしまいです」というモーダルを表示する
+    // MARK: - Finish画面を表示する
 //    private func showFinishTextPopUp() {
 //        let vc = FinishAlertViewController.instantiate()
 //        vc.modalTransitionStyle = .crossDissolve

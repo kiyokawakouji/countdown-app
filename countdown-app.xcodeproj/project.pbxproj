@@ -14,6 +14,7 @@
 		D63F5B0C28F2D0B0002A90C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63F5B0B28F2D0B0002A90C5 /* Assets.xcassets */; };
 		D63F5B0F28F2D0B0002A90C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63F5B0D28F2D0B0002A90C5 /* LaunchScreen.storyboard */; };
 		D68EAB8228FD99BA008447FA /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EAB8128FD99BA008447FA /* ModalViewController.swift */; };
+		D6FBB917290AB90A00ECF0FB /* ModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FBB916290AB90A00ECF0FB /* ModalView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D63F5B0E28F2D0B0002A90C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63F5B1028F2D0B0002A90C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68EAB8128FD99BA008447FA /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D6FBB916290AB90A00ECF0FB /* ModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D63F5B0228F2D0AF002A90C5 /* AppDelegate.swift */,
 				D63F5B0428F2D0AF002A90C5 /* SceneDelegate.swift */,
 				D68EAB8128FD99BA008447FA /* ModalViewController.swift */,
+				D6FBB916290AB90A00ECF0FB /* ModalView.storyboard */,
 				D63F5B0628F2D0AF002A90C5 /* ViewController.swift */,
 				D63F5B0828F2D0AF002A90C5 /* Main.storyboard */,
 				D63F5B0B28F2D0B0002A90C5 /* Assets.xcassets */,
@@ -131,6 +134,7 @@
 				D63F5B0F28F2D0B0002A90C5 /* LaunchScreen.storyboard in Resources */,
 				D63F5B0C28F2D0B0002A90C5 /* Assets.xcassets in Resources */,
 				D63F5B0A28F2D0AF002A90C5 /* Main.storyboard in Resources */,
+				D6FBB917290AB90A00ECF0FB /* ModalView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

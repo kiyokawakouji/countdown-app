@@ -22,12 +22,4 @@ class ModalViewController: UIViewController {
     }
 
 
-    // TODO: No → 閉じる
-    // TODO: ② Yes → カウントダウン実行 + 閉じる
-    // TODO: ③ カウントダウンしたらcountRemainingLabelのカウントを減らす
-
-    // Noはモーダル遷移させてるけど、Yesでも遷移すること考えると別の遷移方法がいいかもしれない
-    @IBAction func dismissModal(_ sender: Any) {
-        self.dismiss(animated: true,completion: nil)
-    }
 }
