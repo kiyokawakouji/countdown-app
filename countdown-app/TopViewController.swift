@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TopViewController: UIViewController {
 
 
     var remainingsCount: Int = 3
@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 16
         button.backgroundColor = UIColor(red: 0.24, green: 0.36, blue: 0.14, alpha: 1.0)
     }
-
 
 
 
