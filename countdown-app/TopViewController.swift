@@ -27,9 +27,14 @@ class TopViewController: UIViewController {
     }
 
 
+    @IBAction func discardingPatternTransition(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "ModalView", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ModalView") as! ModalViewController
+        self.present(vc, animated: true, completion: nil)
+    }
 
 
-    
+    // TODO: valueBackTransition
 
     // MARK: - カウントダウンが1以上→遷移、0回→Finish画面に遷移する
 //    private func checkTestRemains() {

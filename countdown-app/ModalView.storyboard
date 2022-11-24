@@ -10,7 +10,7 @@
         <!--Modal View Controller-->
         <scene sceneID="OH5-uy-1qk">
             <objects>
-                <viewController storyboardIdentifier="ModalViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5mR-p8-aSZ" customClass="ModalViewController" customModule="countdown_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalView" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5mR-p8-aSZ" customClass="ModalViewController" customModule="countdown_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFJ-ju-e2B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="dismissModal:" destination="5mR-p8-aSZ" eventType="touchUpInside" id="zVt-mJ-QrN"/>
+                                                    <action selector="discardingPatternBackView:" destination="5mR-p8-aSZ" eventType="touchUpInside" id="z2q-FU-vyk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c5-VA-FW0">
@@ -82,8 +82,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="cvG-6x-ryB"/>
                     <connections>
-                        <outlet property="No" destination="pvL-DA-Itd" id="imR-iV-emw"/>
-                        <outlet property="Yes" destination="0c5-VA-FW0" id="qqK-1L-Hus"/>
+                        <outlet property="No" destination="pvL-DA-Itd" id="rFj-4C-vwb"/>
+                        <outlet property="Yes" destination="0c5-VA-FW0" id="aYe-yM-yYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9L-cc-GZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

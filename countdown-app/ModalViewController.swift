@@ -21,5 +21,8 @@ class ModalViewController: UIViewController {
         Yes.backgroundColor = UIColor(red: 0.24, green: 0.36, blue: 0.14, alpha: 1.0)
     }
 
+    @IBAction func discardingPatternBackView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        }
 
 }
